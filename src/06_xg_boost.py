@@ -59,3 +59,12 @@ importance = pd.DataFrame({
 }).sort_values('importance', ascending=False)
 
 print("\nFeature Importance:\n", importance)
+
+import os
+os.makedirs('models', exist_ok=True)
+
+import joblib
+
+joblib.dump(xgb_model, 'models/xgboost_delay_model.pkl')
+joblib.dump(encoders, 'models/label_encoders.pkl')
+print("\nModel and encoders saved to models/")
