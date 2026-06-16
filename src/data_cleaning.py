@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load
-df = pd.read_csv('DataSet/flight-data.csv')
+df = pd.read_csv('DataSet/raw/flight-data.csv')
 
 # Step 1: Drop cancelled and diverted flights
 df = df[df['CANCELLED'] == 0]

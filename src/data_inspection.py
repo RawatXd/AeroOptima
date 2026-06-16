@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the data
-df = pd.read_csv('DataSet/flight-data.csv')  
+df = pd.read_csv('DataSet/raw/flight-data.csv')  
 
 # Basic inspection
 print("Shape:", df.shape)
