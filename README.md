@@ -1,2 +1,3 @@
-# AeroOpt - Delay-Aware_Gate_Optimization
-Flight Delay Prediction using ML and Operational Research
+## AeroOptima
+
+AI-Powered Flight Delay Prediction & Gate Optimization System
