@@ -4,7 +4,7 @@ import pandas as pd
 df = pd.read_csv('DataSet/flight_data_cleaned.csv')
 
 # 1. Convert FL_DATE to datetime
-df['FL_DATE'] = pd.to_datetime(df['FL_DATE'])
+df['FL_DATE'] = pd.to_datetime(df['FL_DATE'], format='%m/%d/%Y %I:%M:%S %p')
 
 # 2. Day of week (0=Monday, 6=Sunday)
 df['DAY_OF_WEEK'] = df['FL_DATE'].dt.dayofweek
